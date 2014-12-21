@@ -1,4 +1,9 @@
-Hello
-{% for k,v in list_standing %}
-    {{ k }} , {{ v }} <br>
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<table class='table table-bordered'>
+{% for x, y in list_standing %}
+    <tr><td>{{ x }}</td><td>{{ y }}</td></tr>
 {% endfor %}
+</table>
